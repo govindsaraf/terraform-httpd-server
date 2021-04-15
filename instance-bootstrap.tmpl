@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum install httpd -y
+sudo touch /var/www/html/index.html
+sudo echo "This is http server" > /var/www/html/index.html
+sudo systemctl restart httpd
